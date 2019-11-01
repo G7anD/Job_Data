@@ -7,7 +7,6 @@ from contextlib import closing
 import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
-# from model import Jobs, Base
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Date, Float
 import sys
