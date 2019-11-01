@@ -84,7 +84,7 @@ class Database:
 class PageData:
     def __init__(self, url, start_page_num, end_page_num):
         self.url_def = url
-        self.page_num = start_page_num
+        self.page_num = end_page_num
         self.start_page_num = start_page_num
         self.collect_site_data()
 
@@ -139,5 +139,5 @@ url = "http://ish.mehnat.uz/vacancy/index"
 db = Database()  # connecting to database
 db.create_table()  # creating table
 db.session_ctrl(open=True)  # creating session
-PageData(start_page_num=1, end_page_num=1647, url=url)
+PageData(start_page_num=1, end_page_num=1672, url=url)
 db.session_ctrl(close=True) # closing session
